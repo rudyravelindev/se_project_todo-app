@@ -11,10 +11,12 @@ Delete Tasks: Remove tasks you no longer need.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+Frontend: HTML, CSS, and JavaScript.
 
 ## Deployment
 
-This project is deployed on GitHub Pages: [SIMPLE TODO APP](https://rudyravelindev.github.io/se_project_todo-app/)
+This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+- ADD LINK HERE:
+
+  [SIMPLE TODO APP](https://rudyravelindev.github.io/se_project_todo-app/)
