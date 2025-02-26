@@ -17,5 +17,5 @@ Frontend: HTML, CSS, and JavaScript.
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE:
+- Link to the App:
   [SIMPLE TODO APP](https://rudyravelindev.github.io/se_project_todo-app/)
