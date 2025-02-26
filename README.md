@@ -5,13 +5,13 @@ TaskEASYis a straightforward and user-friendly todo application designed to help
 
 ## Functionality
 
-Add Tasks: Quickly add new tasks with a title and optional description.
+Add Tasks: Quickly add new tasks.
 Mark as Complete: Check off tasks once they're done to keep your list clean and organized.
 Delete Tasks: Remove tasks you no longer need.
 
 ## Technology
 
-Frontend: HTML, CSS, and JavaScript.
+HTML, CSS, and JavaScript.
 
 ## Deployment
 
