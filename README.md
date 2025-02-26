@@ -1,7 +1,7 @@
 # Simple Todo App
 
 - TaskEASY: Your Simple Todo App
-  TaskEASY is a straightforward and user-friendly todo application designed to help you manage your daily tasks efficiently.
+- TaskEASY is a straightforward and user-friendly todo application designed to help you manage your daily tasks efficiently.
 
 ## Functionality
 
