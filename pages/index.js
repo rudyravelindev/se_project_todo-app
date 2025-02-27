@@ -5,7 +5,7 @@ import FormValidation from '../components/FormValidator.js';
 
 const addTodoButton = document.querySelector('.button_action_add');
 const addTodoPopup = document.querySelector('#add-todo-popup');
-const addTodoForm = addTodoPopup.querySelector('.popup__form');
+const addTodoForm = document.forms['add-todo-form'];
 
 const addTodoCloseBtn = addTodoPopup.querySelector('.popup__close');
 const todosList = document.querySelector('.todos__list');
@@ -18,7 +18,11 @@ const closeModal = (modal) => {
   modal.classList.remove('popup_visible');
 };
 
-// The logic in this function should all be handled in the Todo class.
+const renderTodo = (item) => {
+  const todo = generateTodo(item);
+  todosList.append(todo);
+};
+
 const generateTodo = (data) => {
   const todo = new Todo(data, '#todo-template');
   const todoElement = todo.getView();
@@ -38,7 +42,6 @@ addTodoForm.addEventListener('submit', (evt) => {
   const name = evt.target.name.value;
   const dateInput = evt.target.date.value;
 
-  // Create a date object and adjust for timezone
   const date = new Date(dateInput);
   date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
 
@@ -49,19 +52,13 @@ addTodoForm.addEventListener('submit', (evt) => {
   todosList.append(todo);
   closeModal(addTodoPopup);
 
-  // Reset form validation after submission
   newTodoValidator.resetValidation();
-  addTodoForm.reset(); // Clear form fields
 });
 
-// Render initial todos
 initialTodos.forEach((item) => {
-  const todo = generateTodo(item);
-  todosList.append(todo);
+  renderTodo(item);
 });
 
-// Declare and initialize newTodoValidator before using it
 const newTodoValidator = new FormValidation(validationConfig, addTodoForm);
 
-// Now you can safely call enableValidation
 newTodoValidator.enableValidation();
