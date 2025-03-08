@@ -16,7 +16,7 @@ const addTodoPopup = new PopupWithForm({
   popupSelector: '#add-todo-popup',
   handleFormSubmit: () => {},
 });
-//addTodoPopup.setEventListeners();
+addTodoPopup.setEventListeners();
 
 const generateTodo = (data) => {
   const todo = new Todo(data, '#todo-template');
@@ -53,9 +53,16 @@ const renderTodo = (item) => {
   todosList.append(todo);
 };
 
-addTodoButton.addEventListener('click', () => {
-  openModal(addTodoPopupEl);
-});
+// addTodoButton.addEventListener('click', () => {
+//   openModal(addTodoPopupEl);
+// });
+
+// function handleEscapeClose(evt) {
+//   if (evt.key === 'Escape') {
+//     // find teh curently opened
+//     // and close it
+//   }
+// }
 
 // addTodoForm.addEventListener('submit', (evt) => {
 //   evt.preventDefault();
