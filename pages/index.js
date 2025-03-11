@@ -26,13 +26,15 @@ const addTodoPopup = new PopupWithForm({
 
     const values = { name, date, id };
     const todoEl = generateTodo(values);
-    section.addItem(todoEl); 
+    section.addItem(todoEl);
     // Update the total count in the counter
     todoCounter.updateTotal(true);
 
     newTodoValidator.resetValidation();
     addTodoPopup.close();
+  },
 });
+
 addTodoPopup.setEventListeners();
 
 const generateTodo = (data) => {
@@ -41,9 +43,9 @@ const generateTodo = (data) => {
   };
 
   const onDelete = (wasCompleted) => {
-    todoCounter.updateTotal(false); 
+    todoCounter.updateTotal(false);
     if (wasCompleted) {
-      todoCounter.updateCompleted(false); 
+      todoCounter.updateCompleted(false);
     }
   };
 
