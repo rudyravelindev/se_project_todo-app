@@ -6,7 +6,6 @@ class Section {
   }
   renderItems() {
     this._items.forEach((item) => {
-      // Call the renderer, and pass it the item as an argument
       this._renderer(item);
     });
   }
